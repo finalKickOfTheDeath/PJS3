@@ -1,0 +1,265 @@
+
+	
+@font-face {
+	font-family: 'Yantramanav';
+	src: url('../polices/Yantramanav/Yantramanav-Light.ttf'); 
+}
+
+
+/*--------------------------------FORM CSS-------------------------------*/
+
+form {
+	width : 100%;
+}
+
+.f {
+		box-shadow: 3px;
+}
+
+.form1 {
+	width : 65%;
+	position : center;
+	border-left: 1px #9869B2 dashed;
+	border-right: 1px #9869B2 dashed;
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+.padding-top-10 {
+	padding-top : 10px;
+}
+
+.input-margin {
+	margin : 3px;
+}
+
+.back:hover {
+	background-color: #C87EB2;
+} 
+
+.coord {
+	width : 100%;
+}
+
+#envoyer {
+	background-color : #9869B2;
+	border-color: #9869B2;
+}
+
+.liste {
+	width: 80%;
+}
+
+.titreform {
+	text-align: center;
+}
+
+
+#boutonvalider {
+	text-align: center;
+}
+/*----------------------------- CARROUSSEL -------------------------------*/
+
+img {
+	width: 100%;
+	max-height: 500px;
+}
+
+#btn {
+	height: 20px;
+}
+#btn:hover {
+	border-color: black;
+}
+
+#btn.active {
+	border-color: white;
+	background-color: white;
+}
+
+#btn1:hover {
+	border-color: black;
+}
+
+#btn1.active {
+	border-color: white;
+	background-color: white;
+}
+
+#btn2:hover {
+	border-color: black;
+}
+
+#btn2.active {
+	border-color: white;
+	background-color: white;
+}
+
+#btn3:hover {
+	border-color: black;
+}
+
+#btn3.active {
+	border-color: white;
+	background-color: white;
+}
+
+#btn4:hover {
+	border-color: black;
+}
+
+#btn4.active {
+	border-color: white;
+	background-color: white;
+}
+
+.leg {
+	font-size: 50px;
+}
+
+.carousel-caption {
+	bottom: 30%;
+}
+/*-------------------------------HEADER-------------------------------*/
+
+img#logo {
+	display: block;
+    margin: auto;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	width: 150px;
+}
+
+
+/*-------------------------------NAVIGATION-------------------------------*/
+
+nav {
+	padding: 20px 0px;
+	border: 1px solid green;
+}
+
+ul {
+	margin: auto;
+	max-height: 65px;
+	text-align: center;
+	border: 2px solid transparent;
+}
+
+/*nagigation principale*/
+@media screen and (min-width: 992px) {
+	ul {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	ul {
+		width: 100%;
+	}
+}
+
+
+li {
+	display: inline-block;
+	padding: 15px 0px;
+	margin: 0px 5px;
+	width: 17%;
+	background-color: white;
+	text-align: center;
+	border-top: 1px solid black;
+	transition: all 0.2s;
+}
+
+li a {
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+/*navigation active*/
+li.active {
+	border-top: 4px solid #D75FA6; /*rose*/
+}
+
+li.active a {
+	color: #D75FA6; /*rose*/
+}
+
+/*sous navigation*/
+ul.snav {
+	display: none;
+}
+
+ul.snav li {
+	position: relative;
+	top: 12px;
+	margin: 0;
+	width: 100%;
+	background-color: white;
+	z-index: 2;
+}
+
+ul.snav li a {
+	color: black;
+}
+
+/*elements de dynamique*/
+li:hover {
+	border-top: 4px solid #D75FA6; /*rose*/
+}
+
+li:hover a {
+	color: #D75FA6; /*rose*/
+	text-decoration: none;
+}
+
+ul.snav li:hover a {
+	color: #D75FA6; /*rose*/
+}
+
+li:hover ul.snav { 
+	display: table-row;
+}
+
+
+/*---------------------------- FOOTER ------------------------------ */
+
+
+.foot {
+	background-color: #ba7f94;
+	width: 100%;
+	color : white;
+}
+.monfooter {
+	border-color : 1px solid red;
+	background-color: #bd748e;
+}
+
+.test {
+	border: 1px solid black;
+	text-align: center;
+	margin-top: 2%;
+}
+
+#num {
+	font-size : 20px;
+}
+
+#hor {
+	font-size : 20px;
+}
+
+#phone {
+	max-width: 25%;
+	min-width: 20%;
+}
+
+.testrow {
+	width: 70%;
+	border : 1px solid black;
+}
+
+.testrow1 {
+	width: 80%; 
+	border : 1px solid black;
+}
