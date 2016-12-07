@@ -1,0 +1,121 @@
+/**
+*CSS
+*Ecran ordi
+**/
+
+/*-------------------------------GENERAL-------------------------------*/
+* {				
+	outline: 0;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Yantramanav';
+	src: url('../polices/Yantramanav/Yantramanav-Light.ttf'); 
+}
+
+body {
+	background-color: white;
+}
+
+/*-------------------------------HEADER-------------------------------*/
+
+header {
+	padding: 12px 0px;
+	background-color: white;
+}
+
+img#logo {
+	display: block;
+    margin: auto;
+	width: 150px;
+}
+
+/*-------------------------------MENU-------------------------------*/
+
+nav {
+	padding: 20px 0px;
+	font-family: calibri;
+	max-height: 50px;
+}
+
+/*nagigation principale*/
+ul {
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+
+li {
+	display: inline-block;
+	padding: 10px 0px;
+	width: 19.2%;
+	max-height: 30px;
+	text-align: center;
+	border-top: 1px solid black;
+	transition: all 0.2s;
+}
+
+li a {
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 20px;
+	color: black;
+	text-decoration: none
+}
+
+/*navigation active*/
+li.active {
+	border-top: 4px solid #D75FA6; /*rose*/
+}
+
+li.active a {
+	color: #D75FA6; /*rose*/
+}
+
+/*sous navigation*/
+ul.snav {
+	display: none;
+}
+
+ul.snav li {
+	position: relative;
+	top: 10px;
+	width: 100%;
+}
+
+ul.snav li a {
+	color: black;
+}
+
+/*elements de dynamique*/
+li:hover {
+	border-top: 4px solid #D75FA6; /*rose*/
+}
+
+li:hover a {
+	color: #D75FA6; /*rose*/
+}
+
+ul.snav li:hover a {
+	color: #D75FA6; /*rose*/
+}
+
+li:hover ul.snav { 
+	display: table-row;
+}
+
+/*-------------------------------DIV_PRINCIPALE-------------------------------*/
+
+
+
+/*-------------------------------FOOTER-------------------------------*/
+
+
+/*-------------------------------TITRES_ET_PARAGRAPHES-------------------------------*/
+
+
+
+
+
