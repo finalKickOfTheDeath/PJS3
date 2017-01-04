@@ -7,11 +7,11 @@
 		<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		
 		<!-- Utilise CSS -->
-		<link rel="stylesheet" type="text/css" href="./styleCSS/style.css" />
+		<link rel="stylesheet" type="text/css" href="./styleCSS/styleLess.css" />
 		
 		<!-- Utilise LESS -->
-		<link rel="stylesheet/less" type="text/css" href="./styleCSS/styleLess.less">
-		<script src="./less/less.js-2.7.1/dist/less.js" type="text/javascript"></script>
+		<!--<link rel="stylesheet/less" type="text/css" href="./styleCSS/styleLess.less">
+		<script src="./less/less.js-2.7.1/dist/less.js" type="text/javascript"></script>-->
 	</head>
 	
 	<body>
@@ -26,46 +26,100 @@
 		
 		<!-- fin en tête -->
 		
-		<!-- navigation -->
+		<!-- menu -->
 		
 		<div class="container">
 			<div class="row">
-				<nav>
-					<ul>
-						<li><a href="index.html">Accueil</a></li>
-						<li class="active"><a href="destinations.html">Destinations</a>
-							<ul class="snav">
-								<li><a href="france.html">France</a></li>
-								<li><a href="islande.html">Islande</a></li>
-								<li><a href="italie.html">Italie</a></li>
-								<li><a href="espagne.html">Espagne</a></li>
-							</ul>
-						</li>
-						<li><a href="réservation.html">Réservation</a></li>
-						<li><a href="rubriques.html">Rubriques</a>
-							<ul class="snav">
-								<li><a href="rubriqueAventure.html">Aventure</a></li>
-								<li><a href="rubriqueDecouverte.html">Découverte</a></li>
-								<li><a href="rubriqueDetente.html">Détente</a></li>
-							</ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+				<ul id="myTopnav" class="topnav col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-push-2">
+					<li><a href="index.html">Accueil</a></li>
+					<li class="active"><a href="destinations.html">Destinations</a>
+						<ul class="snav">
+							<li><a href="france.html">France</a></li>
+							<li><a href="islande.html">Islande</a></li>
+							<li><a href="italie.html">Italie</a></li>
+							<li><a href="espagne.html">Espagne</a></li>
+						</ul>
+					</li>
+					<li><a href="réservation.html">Réservation</a></li>
+					<li><a href="rubriques.html">Rubriques</a>
+						<ul class="snav">
+							<li><a href="rubriqueAventure.html">Aventure</a></li>
+							<li><a href="rubriqueDecouverte.html">Découverte</a></li>
+							<li><a href="rubriqueDetente.html">Détente</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+					<!--<li class="iconeMenu"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>-->
+				</ul>
 			</div>
 		</div>
+
+		<!--<script type="text/javascript">
+			/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>-->
 		
-		<!-- fin navigation -->
+		<!-- fin menu -->
 		
 		<!-- rubriques -->
 		
-		<div class="container-fluid">
+		<section class="container principal">
+			<div class="row">
+
+				<div class="col-xs-12">
+					<h3> Rechercher une destination par expédition </h3>
+				</div>
+
+				<div class="col-xs-12">
+					<ul class="icone-sprite">
+						<li class="icone-velo">
+							<ul>
+								<li> Paris insolite à vélo </li>
+								<li> Les pyrénées à VTT </li>
+							</ul>
+						</li>
+						<li class="icone-avion">
+							<ul>
+								<li> Baptême de l'air à Séville </li>
+							</ul>
+						</li>
+						<li class="icone-marche">
+							<ul>
+								<li> Randonnée autour de l'Etna </li>
+								<li> Trek entre l'Hekla et l'océan </li>
+								<li> GR20 : la corse du nord au sud </li>
+							</ul>
+						</li>
+						<li class="icone-voiture">
+							<ul>
+								<li> Sur la route des fjords </li>
+								<li> Aples et lacs d'italie </li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<h3> Rechercher une destination sur la carte </h3>
+				</div>
+			</div>
+
 			<div class="row">
 				<object type="image/svg+xml" data="./images/europe2.svg" width="100%" height="100%">
 					  <embed src="./images/europe2.svg" width="500" height="500" type="image/svg+xml" />
 				</object>
 			</div>
-		</div>
+		</section>
 		
 		<!-- fin rubrique -->
 		
